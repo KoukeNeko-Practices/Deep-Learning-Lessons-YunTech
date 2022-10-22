@@ -8,14 +8,14 @@ import ch02 as api
 
 if __name__ == '__main__':
     
-    useTensorFlowNMIST = True
+    useTensorFlowNMIST = False
     
     # create an mlp object
-    mlp = api.NeuralNetMLP(n_hidden=45, 
+    mlp = api.NeuralNetMLP(n_hidden=256, 
                            l2=0.01, 
-                           epochs=300, 
-                           eta=0.0001, 
-                           minibatch_size=1000, 
+                           epochs=20, 
+                           eta=0.002, 
+                           minibatch_size=100, 
                            shuffle=True, 
                            seed=1)
     
