@@ -3,9 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 
-def gen_data(
-    feature_num=10, data_size=100000, test_size=0.2, random_state=42, preproess=True
-):
+def gen_data(feature_num=10, data_size=100000, test_size=0.2, random_state=42, preproess=True):
     random_data = np.random.uniform(low=-5, high=5, size=(data_size, feature_num))
 
     random_data_exp = np.exp(random_data)
